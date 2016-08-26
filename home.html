@@ -1,0 +1,14 @@
+<template name="home">
+    <p>Welcome to the Todos application.</p>
+    {{> cards}}
+</template>
+
+<template name="cards">
+  <ul>
+  {{#each card}}
+    <li>{{text}}: {{type}}</li>
+  {{/each}}
+  </ul>
+</template>
+
+

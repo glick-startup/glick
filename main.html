@@ -1,0 +1,14 @@
+<template name="main">
+  <h1>Glick</h1>
+  {{> navigation}}
+  {{> yield}}
+  <hr />
+  <p>Copyright &copy; Glick, 2016.</p>
+</template>
+
+<template name="navigation">
+  <ul>
+    <li><a href="{{pathFor route='home'}}">Home</a></li>
+    <li><a href="{{pathFor route='expenses'}}">Expenses</a></li>
+  </ul>
+</template>
