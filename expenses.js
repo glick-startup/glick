@@ -1,5 +1,3 @@
-Expenses = new Mongo.Collection('expenses')
-
 if(Meteor.isClient){
   const shopaholic_expenses = [
     {
@@ -9,7 +7,7 @@ if(Meteor.isClient){
     },
     {
      type: "rent",
-     value: "300€",  
+     value: "300€",
      date: "2016-08-25"
     }
   ]
