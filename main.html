@@ -1,25 +1,38 @@
 <head>
   <title>Glick</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <template name="main">
-  <nav>
-    <div class="nav-wrapper">
-      <a href="/" class="brand-logo center">Glick</a>
-    </div>
-  </nav>
-
-
-  <h1 id="header">Glick</h1>
-  {{> navigation}}
+  {{> header}}
   {{> yield}}
-  <hr />
-  <p>Copyright &copy; Glick, 2016.</p>
+  {{> footer}}
 </template>
 
-<template name="navigation">
-  <ul>
-    <li><a href="{{pathFor route='home'}}">Home</a></li>
-    <li><a href="{{pathFor route='expenses'}}">Expenses</a></li>
-  </ul>
+<template name="header">
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper">
+        <a href="/" class="brand-logo center">Glick</a>
+      </div>
+    </nav>
+  </div>
+</template>
+
+<template name="footer">
+  <div class="navbar-fixed">
+    <nav class="bottom">
+      <div class="nav-wrapper row center">
+        <a href="/expenses" class="col s4">
+          <i class="material-icons">assignment</i>
+        </a>
+        <a href="/" class="col s4">
+          <i class="material-icons">home</i>
+        </a>
+        <a class="col s4">
+          <i class="material-icons">account_box</i>
+        </a>
+      </div>
+    </nav>
+  </div>
 </template>
