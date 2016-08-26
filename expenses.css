@@ -13,3 +13,8 @@ nav h4 {
   margin: 0;
   margin-bottom: -20px;
 }
+
+.expense-card {
+  height: 50px;
+  margin: 0px;
+}
