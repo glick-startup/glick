@@ -1,3 +1,11 @@
+nav {
+  background-color: #52d5f1;
+}
+
+.bottom {
+  bottom: 0
+}
+
 main {
   display:block;
   position:relative;
