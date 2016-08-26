@@ -1,0 +1,19 @@
+.suggestion {
+  background-color: #F0A29B !important;
+}
+
+.location {
+  background-color: #F4C383 !important;
+}
+
+.feedback {
+  background-color: #D2E2AC !important;
+}
+
+.question {
+  background-color: #00bcd4 !important;
+}
+
+.card .card-action a {
+  color: #F9D4D1 !important;
+}
