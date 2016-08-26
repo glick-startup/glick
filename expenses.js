@@ -1,20 +1,12 @@
+import Expenses_groups from './expenses_groups.js'
+
 if(Meteor.isClient){
-  const shopaholic_expenses = [
-    {
-     type: "shopping",
-     value: "1000€",
-     date: "2016-08-24"
-    },
-    {
-     type: "rent",
-     value: "300€",
-     date: "2016-08-25"
-    }
-  ]
+  
   // client code goes here
   Template.expenses_list.helpers({
     'expense': function(){
-      return shopaholic_expenses
+      expenses_group = Math.floor(Math.random() * 3);
+      return Expenses_groups[expenses_group]
     }
   })
 }
