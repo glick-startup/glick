@@ -1,14 +1,15 @@
 <template name="expenses">
-  <header>Current Balance {{value}}</header>
+  <nav class="expenses">
+    <h4>{{value}}€</h4>
+    <span>Current Balance</span>
+  </nav>
   {{> expenses_list}}
 </template>
 
 <template name="expenses_list">
-  <ul>
-    {{#each expense}}
-      <section class="card">{{> expense_disp}}</section>
-    {{/each}}
-  </ul>
+  {{#each expense}}
+    <section class="card">{{> expense_disp}}</section>
+  {{/each}}
 </template>
 
 <template name="expense_disp">

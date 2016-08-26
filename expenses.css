@@ -2,3 +2,13 @@
   display: inline;
   padding-right: 20px;
 }
+
+nav.expenses {
+  background-color: #AEF0FE;
+  color: #1B9DBC;
+  text-align: center
+}
+
+nav h4 {
+  margin: 0;
+}
