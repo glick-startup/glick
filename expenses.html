@@ -1,15 +1,15 @@
 <template name="expenses">
-  <h3>Expenses</h3>
-  {{> expenses_list}}
+  <main>
+    <h3>Expenses</h3>
+    {{> expenses_list}}
+  </main>
 </template>
 
 <template name="expenses_list">
   <ul>
-    <div class="cards_container">
-      {{#each expense}}
-        <div class="card_container">{{> expense_disp}}</div>
-      {{/each}}
-    </div>
+    {{#each expense}}
+      <section class="card">{{> expense_disp}}</section>
+    {{/each}}
   </ul>
 </template>
 
