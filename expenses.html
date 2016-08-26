@@ -1,8 +1,6 @@
 <template name="expenses">
-  <main>
-    <header>Current Balance {{value}}</header>
-    {{> expenses_list}}
-  </main>
+  <header>Current Balance {{value}}</header>
+  {{> expenses_list}}
 </template>
 
 <template name="expenses_list">
@@ -14,10 +12,14 @@
 </template>
 
 <template name="expense_disp">
-  <ul class="inline-list">
-    <li>{{type}}</li>
-    <li>{{text}}</li>
-    <li>{{value}}</li>
-    <li>{{date}}</li>
-  </ul>
+  <div class="row">
+    <div class="col s12">
+      <div class="card {{type}} darken-1">
+        <div class="card-content grey-text">
+          <span class="card-title {{type}}"><i class="material-icons"></i></span>
+          <p>{{text}} {{value}} {{date}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
