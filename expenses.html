@@ -1,3 +1,23 @@
 <template name="expenses">
   <h3>Expenses</h3>
+  {{> expenses_list}}
 </template>
+
+<template name="expenses_list">
+  <ul>
+    <div class="cards_container">
+      {{#each expense}}
+        <div class="card_container">{{> expense_disp}}</div>
+      {{/each}}
+    </div>
+  </ul>
+</template>
+
+<template name="expense_disp">
+  <div class="expense_info">{{type}}</div>
+  <div class="expense_info">{{value}}</div>
+  <div class="expense_info">{{date}}</div>
+</template>
+
+
+
