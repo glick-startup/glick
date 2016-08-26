@@ -15,5 +15,37 @@
 }
 
 .card .card-action a {
-  color: #F9D4D1 !important;
+  color: #E5EDCF !important;
+}
+
+.card-title.suggestion:after {
+  content:"Suggestion/Objective";
+}
+
+.card-title.location:after {
+  content:"Location";
+}
+
+.card-title.feedback:after {
+  content:"Progress";
+}
+
+.card-title.question:after {
+  content:"Personalise";
+}
+
+.card-title.suggestion .material-icons:after {
+  content:"sms_failed";
+}
+
+.card-title.location .material-icons:after {
+  content:"place";
+}
+
+.card-title.feedback .material-icons:after {
+  content:"timeline";
+}
+
+.card-title.question .material-icons:after {
+  content:"help";
 }
