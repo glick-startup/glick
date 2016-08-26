@@ -6,9 +6,10 @@
 <template name="cards">
   <ul>
   {{#each card}}
-    <li>{{text}}: {{type}}</li>
+  <section class="card">
+    <h1>{{text}}</h1>
+     <h2>{{type}}</h2>
+   </section>
   {{/each}}
   </ul>
 </template>
-
-
